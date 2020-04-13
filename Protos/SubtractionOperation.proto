@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "OperationResponse.proto";
+import "SubtractionRequest.proto";
+
+option csharp_namespace = "Generated";
+
+service SubtractionOperationService {
+	rpc Calculate(SubtractionRequest) returns (OperationResponse);
+}

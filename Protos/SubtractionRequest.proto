@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace = "Generated";
+
+message SubtractionRequest
+{
+	int32 FirstOperand = 1;
+	int32 SecondOperand = 2;
+}

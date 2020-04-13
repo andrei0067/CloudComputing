@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "OperationResponse.proto";
+import "DivisionRequest.proto";
+
+option csharp_namespace = "Generated";
+
+service DivisionOperationService {
+	rpc Calculate(DivisionRequest) returns (OperationResponse);
+}

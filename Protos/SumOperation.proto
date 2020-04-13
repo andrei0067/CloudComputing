@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "OperationResponse.proto";
+import "SumRequest.proto";
+
+option csharp_namespace = "Generated";
+
+service SumOperationService {
+	rpc Calculate(SumRequest) returns (OperationResponse);
+}
